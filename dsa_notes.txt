@@ -160,4 +160,33 @@ public class Demo {
 }
 ------------------------------------------------
 
-1. Read the problem
+1. Read the problem. Understand the problem. Write down the I/P data. Assertain the O/P. Isolate unwanted information and data. Focus on the relavant information.
+
+2. Find the solution with trial and error basis or using a specific logic or formula or mathematically etc.
+
+3. Now write down the Algorithm. Step by step procedure. Each step must be simple (SRP) and it must finite.
+
+4. Pseudocode
+
+5. Code it
+---------------------------------------------
+Normal Array:
+Size is fixed by the programmer (coding).
+Size cannot change later.
+Deletion depends on storage class
+
+Dynamic Array:
+Size is fixed by the user (during run time).
+Size cannot change later.
+Deletion can be done by the user.
+
+void* malloc(size_t);
+
+int* malloc(40);
+int* maaloc(sizeof(int) * 10);
+scanf(size);
+int* maaloc(sizeof(int) * size);
+
+It allocates memory in Heap for what we are requesting.
+------------------------
+https://forms.gle/95PCgwno7oLyKwFC9
