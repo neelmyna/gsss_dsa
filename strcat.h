@@ -1,0 +1,1 @@
+char *strcat(char *destination, char const *source);

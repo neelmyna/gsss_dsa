@@ -1,0 +1,163 @@
+https://github.com/neelmyna/gsss_dsa
+
+git config --global user.name "neelmyna"
+
+git config --global user.email "abc@gmail.com"
+
+1. Created a Repo for our DSA learning.
+2. Created PAT with no expiry and mailed it to myself.
+3. Run the 2 confifuration commands
+4. Clone the Repo to our laptop.
+
+Repo URL:
+git clone https://github.com/neelmyna/gsss_dsa
+
+Template:
+git clone https://PAT@github.com/neelmyna/gsss_dsa
+
+download mingw (sourceforge.net)
+While installing, you get the list of s/w
+On top left, click basic setup
+Select mingw base32
+Select the check box and click Mark for installation
+Select mingw gcc g++
+Select the check box and click Mark for installation
+On left top corner, click installation and click apply changes and click apply
+Now the s/w will install
+At the end, close the installation window.
+
+size of double is 8 and sizeof float is 4.
+5.5 is not same as 5.5f
+printf("SizeOf 5.5 = %d, SizeOf 5.5f = %d", sizeof(5.5), sizeof(5.5f));
+
+c1 && c2
+c1 &  c2
+
+& boolean values, Long and
+& numeric values, bitwise and
+& unary
+
+Unary &
+"Address of" operator
+It can be applied only to a variable (including a pointer because a pointer is also a variable)
+And we get the address of that variable.
+
+Unary *
+"Dereferencing" or "value at" operator
+It can be applied only to an address (including a pointer, because pointer holds address)
+And we get the value present in that address
+
+
+*num
+value at(5.5)
+
+*(&num)
+
+value at[ address of(num)]
+v at[ 1101 ]
+5.5
+num
+------------
+float num = 5.557f;
+    printf("Value of Num = %.2f \n", num);
+    printf("Value of Num = %.1f \n", num);
+    printf("Value of Num = %.0f \n", *(&num));
+--------------
+**ptr
+v at(v at(ptr))
+v at(v at(1101))
+v at(5.5)
+
+**(&ptr)
+v at(v at(address of(ptr)))
+v at(v at(3501))
+v at(1101)
+5.5 = num
+------------------------------
+DAY2 THURSDAY 13-11-2025
+
+SRP
+Cohesion and Coupling
+DS
+Array as an DS
+Need of invention of DS
+Array is time efficient but memory inefficient.
+
+Every address has a property known as SIZE OF THE DT PROPERTY.
+
+Size of a pointer irrespective of the DT is always same and it depends on the OS (On Windows it is 4 bytes and on Linux it is 8 bytes etc.)
+
+TYPES OF POINTERS:
+null pointer: If its value is NULL (a pointer not pointing to any location in memory)
+wild pointer: An uninitialized pointer which has some junk address.
+CONSTANT POINTER: A pointer which points always to the same variable.
+POINTER TO A CONSTANT: A pointer that can point to some  variable, but it cannot modify the value of that variable to which it is pointing to.
+constant pointer to a constant: 
+
+dangling pointer:
+
+
+1D Array:
+&a 	address of array
+a 	address of 1st element
+*a  value of 1st element
+
+
+2D Array:
+&a 	address of 2D array
+a 	address of 1st 1D array
+*a  address of 1st element in 1st row
+**a value of 1st element of 1st row in the 2D array
+----------------------------------------
+STRING
+a group of characters that make up one data.
+Unlike numeric arrays, where we must pass the adress of 1st element and also its size to the function, in the case of strings, we need not pass the seize of the string.
+
+string handling functions:
+
+strlen()
+int strlen(char const*);
+
+strcpy()
+
+char* strcpy(D, S)
+char* strcpy(char*, char const*);
+
+char* strchr()
+char* strrchr()
+strcat()
+strncpy()
+strtok()
+stricmp()
+strcmp()
+
+int strcmp(char const*, char const*);
+
+Binary search
+
+while()
+do while()
+
+Official Documentation
+C/C++  MSDN, IBM Docs
+Python: docs.python.org
+Java: docs.oracle.com
+HTML CSS JS: dev.mozilla
+
+nptel
+CDAC
+MIT Open University
+Java: 1z0829, 1z0830 (Certification)
+Python: pythoninstitute.org
+M/S, Google, Amazon, Cisco
+---------------------------------------
+Demo.java
+
+public class Demo {
+	public static void main(String[] args) {
+		System.out.print("I love Java");
+	}
+}
+------------------------------------------------
+
+1. Read the problem
