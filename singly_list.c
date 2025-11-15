@@ -1,11 +1,11 @@
-#include "node.h"
+#include "node.c"
 #include "singly_list.h"
 #include <stdlib.h>
 #include <stdio.h>
 
-struct Node *insertAtFront(struct Node *head)
+Node *insertAtFront(Node *head)
 {
-    struct Node *newNode = (struct Node *)malloc(sizeof(struct Node));
+    Node *newNode = (Node *)malloc(sizeof(Node));
     printf("Enter data of the new node: ");
     scanf("%s", newNode->data);
     newNode->link = NULL;
@@ -15,9 +15,9 @@ struct Node *insertAtFront(struct Node *head)
     return newNode;
 }
 
-void insertAtRear(struct Node **head)
+void insertAtRear(Node **head)
 {
-    struct Node *newNode = (struct Node *)malloc(sizeof(struct Node));
+    Node *newNode = (Node *)malloc(sizeof(Node));
     printf("Enter data of the new node: ");
     scanf("%s", newNode->data);
     newNode->link = NULL;
@@ -26,36 +26,36 @@ void insertAtRear(struct Node **head)
         *head = newNode;
         return;
     }
-    struct Node *temp = *head;
+    Node *temp = *head;
     while (temp->link != NULL)
         temp = temp->link;
     temp->link = newNode;
 }
 
-struct Node *insertAtPosition(struct Node *first)
+Node *insertAtPosition(Node *first)
 {
     return NULL;
 }
 
-void deleteFromFront(struct Node **head)
+void deleteFromFront(Node **head)
 {
     if (*head == NULL)
     {
         puts("List is empty");
         return;
     }
-    struct Node *temp = *head;
+    Node *temp = *head;
     *head = (*head)->link;
     printf("Node with data %s is deleted \n", temp->data);
     free(temp);
 }
 
-struct Node *deleteFromRear(struct Node *head)
+Node *deleteFromRear(Node *head)
 {
     return NULL;
 }
 
-struct Node *deleteFromPosition(struct Node *head)
+Node *deleteFromPosition(Node *head)
 {
     return NULL;
 }
@@ -65,10 +65,10 @@ char *searchData(char *data)
     return "";
 }
 
-void printList(struct Node *head)
+void printList(Node *head)
 { // Read only function
 }
 
-void printListReverse(struct Node *head)
+void printListReverse(Node *head)
 {
 }
